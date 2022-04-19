@@ -1,0 +1,1 @@
+sass --watch kreativos-commerce-etiquetas.scss:css/kreativos-commerce-etiquetas.css --style compressed

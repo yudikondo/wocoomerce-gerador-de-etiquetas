@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body {-webkit-print-color-adjust: exact;}
+
+    .order {
+        page-break-before: always;
+    }
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+page.kreativos-commerce-etiquetas {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    flex-wrap: wrap;
+
+    h1, h2, h3, h4, h5 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .order {
+        width: 550px;
+        min-width: 550px;
+        border: 2px solid #222;
+        margin: 1em;
+        padding: 2em;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        
+
+        .data {
+            h3.recipient {
+                text-transform: uppercase;
+                display: table;
+                background: black !important;
+                color: white;
+                border-radius: 5px;
+                padding: 2px 15px;
+                font-size: 12px;
+                font-weight: 800;
+                margin-bottom: 1em;
+    
+                @media print {
+                    background: black !important;
+                    -webkit-print-color-adjust: exact; 
+                    color: white !important;
+                }
+            }
+
+            h3.sender {
+                text-transform: uppercase;
+                display: table;
+                background: black !important;
+                color: white;
+                border-radius: 5px;
+                padding: 2px 15px;
+                font-size: 12px;
+                font-weight: 800;
+                margin-bottom: 1em;
+                margin-top: 2em;
+    
+                @media print {
+                    background: black !important;
+                    -webkit-print-color-adjust: exact; 
+                    color: white !important;
+                }
+            }
+
+            .customer {}
+            .address {}
+            .sender {}
+        }
+
+        .shipping {
+            img {
+                max-width: 150px;
+            }
+        }
+        
+    }
+}
